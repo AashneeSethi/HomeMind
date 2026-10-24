@@ -1,0 +1,55 @@
+1
+00:00:00,500 --> 00:00:06,000
+Today's smart homes suffer from notification fatigue.
+
+2
+00:00:06,500 --> 00:00:11,500
+Every camera flutter or sensor triggers an isolated push alert. Devices detect events, but they don't understand context.
+
+3
+00:00:12,000 --> 00:00:19,000
+Meet HomeMind. An intelligent context, memory, and decision layer for the ambient home.
+
+4
+00:00:19,500 --> 00:00:27,000
+Built with Python, FastAPI, and Model Context Protocol servers, HomeMind maintains an evolving state across Ring, Alexa, and Fire TV.
+
+5
+00:00:27,500 --> 00:00:34,500
+Rather than configuring brittle automation routines, users express intent conversationally.
+
+6
+00:00:35,000 --> 00:00:45,000
+When I ask our simulated Alexa client: "Watch the front door for 30 minutes", HomeMind executes the set_temporary_watch MCP tool, establishing an active monitoring window with a live countdown.
+
+7
+00:00:45,500 --> 00:00:51,500
+Now let's simulate a physical Ring event.
+
+8
+00:00:52,000 --> 00:01:00,000
+When a visitor presses the front doorbell, HomeMind correlates it with our active watch and immediately escalates an alert, routing it multimodally across devices.
+
+9
+00:01:00,500 --> 00:01:06,500
+Now watch what happens in Focus mode.
+
+10
+00:01:07,000 --> 00:01:15,000
+When perimeter motion occurs, HomeMind's Decision Engine suppresses intrusive audible chimes, logging the event quietly in memory while preserving your focus.
+
+11
+00:01:15,500 --> 00:01:21,500
+When you're ready to catch up, there's no need to scrub through camera feeds.
+
+12
+00:01:22,000 --> 00:01:32,000
+Simply ask: "What happened at the front door?" HomeMind queries its MemoryManager, synthesizing recent events into a clear natural response.
+
+13
+00:01:32,500 --> 00:01:40,500
+HomeMind is powered by FastAPI, 6 MCP tools, and 28 verified tests. Ready for Alexa+ Agent Skills and AWS cloud deployment.
+
+14
+00:01:41,000 --> 00:01:48,500
+"HomeMind: A smarter home doesn't just detect events. It understands when they matter."

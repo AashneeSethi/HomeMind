@@ -1,0 +1,55 @@
+1
+00:00:00,500 --> 00:00:07,000
+Today's smart homes are louder than ever. Every camera chime, backyard leaf flutter, or hallway sensor triggers an isolated push notification...
+
+2
+00:00:07,500 --> 00:00:15,000
+...interrupting dinner or focus work. Devices detect events, but they don't understand context.
+
+3
+00:00:15,500 --> 00:00:23,000
+Meet HomeMind. HomeMind is an intelligent context, memory, and decision layer for the ambient home.
+
+4
+00:00:23,500 --> 00:00:31,500
+Built with Python, FastAPI, and Model Context Protocol servers, HomeMind unifies Ring, Alexa, and Fire TV into one cohesive intelligence.
+
+5
+00:00:32,000 --> 00:00:39,500
+Rather than configuring brittle automation routines, users express intent conversationally.
+
+6
+00:00:40,000 --> 00:00:49,500
+When I ask: "Watch the front door for 30 minutes", HomeMind executes the set_temporary_watch MCP tool, establishing a dynamic monitoring window with live countdown.
+
+7
+00:00:50,000 --> 00:00:55,500
+Now let's simulate a physical Ring event.
+
+8
+00:00:56,000 --> 00:01:01,500
+When a visitor presses the front doorbell, HomeMind correlates it with our active watch and immediately escalates an alert.
+
+9
+00:01:02,000 --> 00:01:07,500
+Now watch what happens in Focus mode.
+
+10
+00:01:08,000 --> 00:01:14,500
+When perimeter motion occurs, HomeMind suppresses intrusive audible chimes, logging the event quietly while keeping you in your flow.
+
+11
+00:01:15,000 --> 00:01:21,500
+When you're ready to catch up, there's no need to scrub through camera feeds.
+
+12
+00:01:22,000 --> 00:01:31,500
+Simply ask Alexa: "What happened at the front door?" HomeMind queries short-term memory, synthesizing recent events into a clear natural response.
+
+13
+00:01:32,000 --> 00:01:41,500
+HomeMind is powered by FastAPI, Pydantic, 6 Model Context Protocol tools, and a 28-test verified suite.
+
+14
+00:01:42,000 --> 00:01:51,500
+"HomeMind: A smarter home doesn't just detect events. It understands when they matter."

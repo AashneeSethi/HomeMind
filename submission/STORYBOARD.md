@@ -1,0 +1,27 @@
+# HomeMind Hackathon Demo Video Storyboard 🎨
+
+**Target Video Spec**: 1920×1080 (16:9), 30 fps, MP4 format  
+**Total Target Duration**: ~118 Seconds (under 120s limit)  
+**Hackathon**: Amazon Build, Ship, Shape Hackathon  
+
+---
+
+## Shot-by-Shot Production Plan
+
+| Scene # | Time Window | Scene Title & Purpose | Visual Shot & UI State | Spoken Voiceover Narration | On-Screen Caption / Graphic |
+| :---: | :---: | :--- | :--- | :--- | :--- |
+| **01** | `00:00 - 00:15` (15s) | **The Ambient Smart Home Problem**<br>Hook audience with notification fatigue problem. | Cinematic dark title card: HomeMind logo with glowing aura and warning icons representing camera chimes, fluttering leaves, and phone alerts. | *"Today's smart homes are louder than ever. Every camera chime, backyard leaf flutter, or hallway sensor triggers an isolated push notification, interrupting dinner or deep work with the exact same urgency. Smart devices detect events—but they don't understand context."* | `HomeMind: Ambient Intelligence` <br> `The Problem: Smart devices detect events, but none understand context.` |
+| **02** | `00:15 - 00:30` (15s) | **Meet HomeMind**<br>Show real running dashboard & architecture pillars. | High-res real UI capture (`scene2_dashboard.png`): Header with live port 8081 badge, Occupancy & Context State card (`home` mode), Active Watches counter (0), and clean Recent Events stream. | *"Meet HomeMind. HomeMind is an intelligent context, memory, and decision layer. Built on Python, FastAPI, and standard Model Context Protocol servers, HomeMind maintains an evolving model of your home across Ring, Alexa, and Fire TV."* | `HomeMind Control Center` <br> `Context, Memory & Decision Layer across Ring, Alexa & Fire TV` |
+| **03** | `00:30 - 00:50` (20s) | **User Intent: Temporary Watch via MCP**<br>Demonstrate conversational intention setting. | Real UI capture (`scene3_watch.png`): Alexa+ Conversation Panel showing user utterance: *"Watch the front door for 30 minutes."* HomeMind replies with `set_temporary_watch` confirmation. Active Watches card appears showing `front_door` with active countdown timer. | *"Rather than configuring brittle automation routines, users simply express intent through Alexa. When I ask: 'Watch the front door for 30 minutes', HomeMind executes the set_temporary_watch MCP tool. A dynamic monitoring window is established with live countdown and prioritized attention thresholds."* | `Alexa+ Agent Skill Integration` <br> `Tool: set_temporary_watch(location='front_door', duration=30)` |
+| **04** | `00:50 - 01:15` (25s) | **Event Ingestion & Context Decisions**<br>Compare priority alert vs focus mode quiet suppression. | Real UI captures (`scene4_alert.png` $\rightarrow$ `scene4_focus.png`): First, `doorbell_press` fires matching active watch $\rightarrow$ Active Alert banner escalates with chime. Next, mode flips to `focus` and `motion_detected` fires $\rightarrow$ context updates silently without loud interruption. | *"Now let's simulate a physical Ring event. When a visitor rings the front doorbell, HomeMind correlates it with our active watch and immediately escalates an alert. But watch what happens in Focus mode. When perimeter motion occurs, HomeMind's Decision Engine suppresses intrusive audible chimes, logging the event quietly while keeping you in your flow."* | `Decision Engine & Cognitive Pipeline` <br> `Watch Match: Escalated Alert \| Focus Mode: Audible Chime Suppressed` |
+| **05** | `01:15 - 01:35` (20s) | **Conversational Recall via Memory**<br>Demonstrate two-way conversational recall. | Real UI capture (`scene5_recall.png`): Alexa+ Conversation Panel showing user inquiry: *"What happened at the front door?"* HomeMind replies with structured natural-language summary from `what_happened` MCP tool. | *"When you're ready to catch up, there's no need to scrub through endless camera timelines. Simply ask Alexa+: 'What happened at the front door?' HomeMind queries its MemoryManager, synthesizing recent events into a concise, natural response."* | `Conversational Memory Recall` <br> `Tool: what_happened(location='front_door')` |
+| **06** | `01:35 - 01:58` (23s) | **Architecture & Closing Tagline**<br>Summarize verified tech stack & closing pitch. | Cinematic architecture diagram (`scene6_architecture.png`) displaying the 5-step cognitive loop (Sensors $\rightarrow$ Context/Memory $\rightarrow$ Decision Engine $\rightarrow$ Multimodal Routing $\rightarrow$ MCP), with 28/28 passing test badge and closing tagline. | *"HomeMind is powered by FastAPI, Pydantic, 6 Model Context Protocol tools, and a 28-test verified test suite. While today's demo runs locally with simulated Ring events and an Alexa-style MCP client, the architecture is ready for Amazon Agent Skills and AWS cloud deployment. HomeMind: A smarter home doesn't just detect events. It understands when they matter."* | `FastAPI · Python 3.11 · Model Context Protocol · React 18` <br> `"A smarter home doesn't just detect events. It understands when they matter."` |
+
+---
+
+## Production Transitions & Animation Guidelines
+
+- **Cut Type**: 0.5-second crossfades between scenes to maintain continuous ambient pacing.
+- **Aspect Ratio**: 1920×1080 (16:9 widescreen landscape).
+- **Subtitles / Lower Thirds**: Semibold white sans-serif on semi-transparent dark charcoal container (`rgba(15, 23, 42, 0.85)`), positioned at bottom center.
+- **Audio Balance**: Spoken voiceover normalized to -14 LUFS, crisp and clear.

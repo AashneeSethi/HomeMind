@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    width: 1920px;
+    height: 1080px;
+    background: radial-gradient(circle at 50% 15%, #141e33 0%, #080c14 70%, #030508 100%);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    color: #f8fafc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+  }
+  .glow {
+    position: absolute;
+    width: 800px;
+    height: 450px;
+    background: rgba(16, 185, 129, 0.12);
+    filter: blur(140px);
+    border-radius: 50%;
+    top: 20%;
+    z-index: 1;
+  }
+  .content {
+    z-index: 2;
+    text-align: center;
+    max-width: 1600px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .header-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 18px;
+    background: rgba(16, 185, 129, 0.15);
+    border: 1px solid rgba(16, 185, 129, 0.4);
+    border-radius: 9999px;
+    color: #6ee7b7;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  h2 {
+    font-size: 54px;
+    font-weight: 800;
+    margin-bottom: 12px;
+    background: linear-gradient(180deg, #ffffff 0%, #cbd5e1 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .sub {
+    font-size: 22px;
+    color: #94a3b8;
+    margin-bottom: 44px;
+  }
+  .pipeline {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .node {
+    flex: 1;
+    background: rgba(15, 23, 42, 0.85);
+    border: 1px solid rgba(148, 163, 184, 0.2);
+    border-radius: 16px;
+    padding: 24px 16px;
+    text-align: center;
+    backdrop-filter: blur(12px);
+    position: relative;
+  }
+  .node.highlight {
+    border-color: #8b5cf6;
+    background: rgba(30, 27, 75, 0.8);
+    box-shadow: 0 0 30px rgba(139, 92, 246, 0.3);
+  }
+  .node .num {
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    border-radius: 50%;
+    background: #3b82f6;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  .node.highlight .num {
+    background: #8b5cf6;
+  }
+  .node h4 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #f1f5f9;
+    margin-bottom: 6px;
+  }
+  .node p {
+    font-size: 14px;
+    color: #94a3b8;
+    line-height: 1.4;
+  }
+  .arrow {
+    font-size: 26px;
+    color: #64748b;
+    font-weight: 300;
+  }
+  .badges-row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 40px;
+  }
+  .pill {
+    padding: 10px 22px;
+    background: rgba(30, 41, 59, 0.7);
+    border: 1px solid rgba(148, 163, 184, 0.25);
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #e2e8f0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .quote-box {
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.15) 0%, rgba(16, 185, 129, 0.15) 100%);
+    border: 1px solid rgba(165, 180, 252, 0.35);
+    border-radius: 16px;
+    padding: 20px 48px;
+    max-width: 1200px;
+  }
+  .quote-text {
+    font-size: 26px;
+    font-weight: 700;
+    font-style: italic;
+    color: #f8fafc;
+    letter-spacing: -0.01em;
+  }
+</style>
+</head>
+<body>
+  <div class="glow"></div>
+  <div class="content">
+    <div class="header-badge">Architecture & Verification</div>
+    <h2>5-Step Ambient Cognitive Loop</h2>
+    <p class="sub">Decoupling perception, intent, attention management, and multimodal routing</p>
+
+    <div class="pipeline">
+      <div class="node">
+        <div class="num">1</div>
+        <h4>Perception</h4>
+        <p>Ring events (doorbell, perimeter motion, contacts)</p>
+      </div>
+      <div class="arrow">➔</div>
+      <div class="node">
+        <div class="num">2</div>
+        <h4>Context</h4>
+        <p>ContextManager tracks occupancy mode & device state</p>
+      </div>
+      <div class="arrow">➔</div>
+      <div class="node highlight">
+        <div class="num">3</div>
+        <h4>Decision Engine</h4>
+        <p>Attention evaluation & temporary watch filtering</p>
+      </div>
+      <div class="arrow">➔</div>
+      <div class="node">
+        <div class="num">4</div>
+        <h4>Routing</h4>
+        <p>Alexa voice vs Fire TV visual vs quiet memory</p>
+      </div>
+      <div class="arrow">➔</div>
+      <div class="node">
+        <div class="num">5</div>
+        <h4>MCP Agent</h4>
+        <p>6 tools exposed for Alexa+ conversational skills</p>
+      </div>
+    </div>
+
+    <div class="badges-row">
+      <div class="pill">✅ 28/28 Pytest Tests Passing</div>
+      <div class="pill">⚡ FastAPI (Port 8081) + React 18 (Port 5173)</div>
+      <div class="pill">🧩 6 Model Context Protocol Tools</div>
+      <div class="pill">🛡️ Zero Hardcoded Secrets</div>
+    </div>
+
+    <div class="quote-box">
+      <p class="quote-text">"HomeMind: A smarter home doesn't just detect events. It understands when they matter."</p>
+    </div>
+  </div>
+</body>
+</html>
